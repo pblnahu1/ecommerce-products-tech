@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+#header{
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff;
+    z-index: 100;
+    border-bottom: 1px solid #000000;
+}
+
+.logo-header{
+    display: flex;
+}
+
+.logo-header img{
+    min-height: 0;
+}
+
+.header-link{
+    /* width: 100%; */
+    margin-left: 50px;
+    font-size: 35px;
+    font-weight: 700;
+    text-decoration: none;
+    padding-top: 13px;
+    color: rgb(48,44,44);
+}
+
+.header-link:hover{
+    text-decoration: underline #000;
+}
+
+#nav-bar{
+    display: flex;
+}
+
+#nav-bar .nav-link{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 25px 35px;
+    transition: none;
+    color: #000;
+}
+
+#nav-bar .nav-link:hover{
+    background-color: #3d3d3d;
+    color: #ffffff;
+    transition: all 0.2s ease-in-out;
+}
+
+#nav-bar .link-sesion:hover{
+    background-color: rgb(103, 15, 219);
+    color: #ffffff;
+}
+
+#nav-bar .link-cerrar-sesion:hover{
+    background-color: rgb(250,57,57);
+    color: #ffffff;
+}
+
+#nav-bar .link-carrito:hover{
+    background-color: rgb(140, 240, 140);
+    color: #00700f;
+}
+
+#nav-bar .link-heart:hover{
+    background-color: rgb(248, 101, 101);
+    color: rgb(95, 0, 0);
+}
+
+/* Mobile */
+
+@media (max-width: 991px) {
+    #header{
+        position: relative;
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #nav-bar{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px 0 0 0;
+    }
+
+    .logo-header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-link{
+        /* width: 20%; */
+        margin: 0;
+        font-size: 3em;
+    }
+}
