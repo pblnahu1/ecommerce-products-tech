@@ -1,0 +1,50 @@
+[
+    {
+        "nombre": "Notebook Lenovo 15.6' Legion 5",
+        "precio": "$1.249.999"
+    },
+    {
+        "nombre": "Notebook Lenovo IP 3 14ITL6 Core I3 8G",
+        "precio": "$714.996,82"
+    },
+    {
+        "nombre": "Notebook Lenovo V15 I3 8G",
+        "precio": "$670.141,63"
+    },
+    {
+        "nombre": "Notebook Lenovo 15.6' Core I7",
+        "precio": "$2.829.501,79"
+    },
+    {
+        "nombre": "Notebook Asus Tuf F15 I5-11400h 32gb Ssd",
+        "precio": "$959.169"
+    },
+    {
+        "nombre": "Notebook Asus Rog Strix Scar Corei9 16gb 512gb Rtx3060",
+        "precio": "2.999.999"
+    },
+    {
+        "nombre": "Notebook Dell Inspiron 3520 Intel Core I5",
+        "precio": "$633.149"
+    },
+    {
+        "nombre": "Notebook Dell Latitude 3180 negra 11.6'",
+        "precio": "$272.999"
+    },
+    {
+        "nombre": "Notebook Hp 15-dy2061la Intel Core I3 1125g4",
+        "precio": "$573.899"
+    },
+    {
+        "nombre": "Notebook Hp 15 Core I5 8gb Ram 256gb Ssd",
+        "precio": "$726.208"
+    },
+    {
+        "nombre": "Notebook gamer MSI Pulse 15",
+        "precio": "$1.819.999"
+    },
+    {
+        "nombre": "Notebook Msi Modern Ryzen 7 7730u",
+        "precio": "$787.149"
+    }
+]
