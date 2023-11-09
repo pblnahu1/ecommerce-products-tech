@@ -85,6 +85,140 @@ body {
     color: rgb(95, 0, 0);
 }
 
+
+#miDiv {
+    padding: 35px 0px;
+    position: absolute;
+    top: 81px;
+    z-index: 1000;
+    right: 0;
+    left: 45%;
+    background-color: #fff;
+    margin: 0 11%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 600px;
+    border: 1px solid #000;
+}
+
+#miDiv::-webkit-scrollbar{
+    width: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+#miDiv::-webkit-scrollbar-thumb{
+    background-color: #000000;
+    border-radius: 10px;
+}
+
+.diseñoNumero {
+    padding: 10px;
+    background-color: red;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    position: relative;
+    top: -12px;
+    left: 30px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.informacionCompra{
+    width: 500px;
+    /* height: 500px; */
+    background-color: #fff;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* position: fixed; */
+}
+
+.informacionCompra h2{
+    font-weight: 300;
+    /* margin: 50px 0px 0px 50px; */
+    font-size: 32px;
+    width: 60%;
+}
+
+.btn-cerrar-carrito{
+    font-weight: 800;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1vmax #ff0000;
+    background-color: #ff7979;
+    color: #850101;
+}
+
+.contenedor-carrito {
+    border: 1px solid #a0a0a0;
+    border-radius: 10px;
+    margin: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.contenedor-carrito > div{
+    margin: 0px 45px;
+    padding: 20px 0px;
+    width: auto;
+    border-bottom: 1px dotted #000;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contenedor-carrito img{
+    width: 25px;
+    height: auto;
+    margin-right: 10px;
+    border-bottom: none;
+    cursor: pointer;
+} */
+
+.total{
+    z-index: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 150px;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.total span{
+    font-weight: 300;
+}
+
+.btn-finalizar-compra{
+    font-weight: 800;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1vmax #a4a4ff;
+    background-color: #070777;
+    color: #fff;
+}
+
 /* Mobile */
 
 @media (max-width: 991px) {

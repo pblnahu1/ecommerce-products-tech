@@ -426,6 +426,12 @@ hr{
 /* Modo Mobile */
 
 @media(max-width: 991px){
+    #miDiv{
+        position: static;
+        margin: 0 3%;
+        height: 470px;
+    }
+
     .container{
         max-width: 1000px;
         margin: 0 auto;

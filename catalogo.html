@@ -30,10 +30,26 @@
         </div>
         <nav id="nav-bar">
             <a class="nav-link" href="index.html" title="Página Principal">Inicio</a>
-            <a href="#" class="nav-link link-carrito" title="Agregados al carrito"><i class="fas fa-shopping-cart"></i></a></i>
+            <a href="#" class="nav-link link-carrito" title="Agregados al carrito" onclick="mostrarCarrito()"><i class="fas fa-shopping-cart">
+                <div id="numero"></div>
+            </i></a>
+            <div id="miDiv" style="display: none;">
+                <div class="informacionCompra" id="informacionCompra">
+                    <h2 class="title-carrito">Mi Carrito</h2>
+                    <button class="btn-cerrar-carrito" id="btn-cerrar-carrito" onclick="mostrarCarrito()">X</button>
+                </div>
+                <div class="contenedor-carrito" id="contenedor-carrito">
+                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt expedita fugit laborum, corrupti officiis illum magnam quibusdam doloremque obcaecati, similique nihil. Ut necessitatibus culpa illum qui? Aliquid assumenda accusantium nam!</h2>
+                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt expedita fugit laborum, corrupti officiis illum magnam quibusdam doloremque obcaecati, similique nihil. Ut necessitatibus culpa illum qui? Aliquid assumenda accusantium nam!</h2>
+                </div>
+                <div class="total" id="total"></div>
+                <button class="btn-finalizar-compra" id="btn-finalizarcompra">Finalizar Compra</button>
+                
+            </div>
             <a href="#" class="nav-link link-heart" title="Tus Productos Favoritos"><i class="fas fa-heart"></i></a>
             <a href="login.html" class="nav-link link-sesion" title="Iniciar Sesión o Registrarse"><i class="fas fa-user"></i></a>
         </nav>
+        
     </header>
 
     <section id="sct-slider-catalogo">
@@ -60,9 +76,13 @@
                         <p title="Agregar a favoritos" class="p-icon-heart heart"><i class="fas fa-heart"></i></p>
                     </div>
                     <img src="assets/img/productos/img-post-notebook-lenovo-1.png" alt="image-articulo-1">
-                    <h3 id="nombre-producto">Notebook Lenovo 15.6' Legion 5</h3>
-                    <span id="precio-producto">$1.249.999</span>
-                    <a href="#" class="button">Añadir al carrito<i class="fas fa-shopping-cart"></i></a>
+
+                    <div class="contenedor-texto">
+                        <h3 id="nombre-producto">Notebook Lenovo 15.6' Legion 5</h3>
+                        <span id="precio-producto">$1.249.999</span>
+                        <a href="#" class="button">Agregar<i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                    
                 </div>
                 <div class="item-art">
                     <div class="contenedor-top">
@@ -70,9 +90,12 @@
                         <p title="Agregar a favoritos" class="p-icon-heart heart"><i class="fas fa-heart"></i></p>
                     </div>
                     <img src="assets/img/productos/img-post-notebook-lenovo-2.png" alt="image-articulo-1">
-                    <h3 id="nombre-producto">Notebook Lenovo IP 3 14ITL6 Core I3 8G</h3>
-                    <span id="precio-producto">$714.996,82</span>
-                    <a href="#" class="button">Añadir al carrito<i class="fas fa-shopping-cart"></i></a>
+                    <div class="contenedor-texto">
+                        <h3 id="nombre-producto">Notebook Lenovo IP 3 14ITL6 Core I3 8G</h3>
+                        <span id="precio-producto">$714.996,82</span>
+                        <a href="#" class="button">Agregar<i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                    
                 </div>
                 <div class="item-art">
                     <div class="contenedor-top">
@@ -80,9 +103,12 @@
                         <p title="Agregar a favoritos" class="p-icon-heart heart"><i class="fas fa-heart"></i></p>
                     </div>
                     <img src="assets/img/productos/img-post-notebook-lenovo-3.png" alt="image-articulo-1">
-                    <h3 id="nombre-producto">Notebook Lenovo V15 I3 8G</h3>
-                    <span id="precio-producto">$670.141,63</span>
-                    <a href="#" class="button">Añadir al carrito<i class="fas fa-shopping-cart"></i></a>
+                    <div class="contenedor-texto">
+                        <h3 id="nombre-producto">Notebook Lenovo V15 I3 8G</h3>
+                        <span id="precio-producto">$670.141,63</span>
+                        <a href="#" class="button">Agregar<i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                    
                 </div>
                 <div class="item-art">
                     <div class="contenedor-top">
@@ -90,9 +116,12 @@
                         <p title="Agregar a favoritos" class="p-icon-heart heart"><i class="fas fa-heart"></i></p>
                     </div>
                     <img src="assets/img/productos/img-post-notebook-lenovo-4.png" alt="image-articulo-1">
-                    <h3 id="nombre-producto">Notebook Lenovo 15.6' Core I7</h3>
-                    <span id="precio-producto">$2.829.501,79</span>
-                    <a href="#" class="button">Añadir al carrito<i class="fas fa-shopping-cart"></i></a>
+                    <div class="contenedor-texto">
+                        <h3 id="nombre-producto">Notebook Lenovo 15.6' Core I7</h3>
+                        <span id="precio-producto">$2.829.501,79</span>
+                        <a href="#" class="button">Agregar<i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                    
                 </div>
                 <div class="item-art">
                     <div class="contenedor-top">
@@ -100,9 +129,12 @@
                         <p title="Agregar a favoritos" class="p-icon-heart heart"><i class="fas fa-heart"></i></p>
                     </div>
                     <img src="assets/img/productos/img-post-notebook-asus-5.png" alt="image-articulo-1">
-                    <h3 id="nombre-producto">Notebook Asus Tuf F15 I5-11400h 32gb Ssd</h3>
-                    <span id="precio-producto">$959.169</span>
-                    <a href="#" class="button">Añadir al carrito<i class="fas fa-shopping-cart"></i></a>
+                    <div class="contenedor-texto">
+                        <h3 id="nombre-producto">Notebook Asus Tuf F15 I5-11400h 32gb Ssd</h3>
+                        <span id="precio-producto">$959.169</span>
+                        <a href="#" class="button">Agregar<i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                    
                 </div>
                 <div class="item-art">
                     <div class="contenedor-top">
@@ -110,9 +142,12 @@
                         <p title="Agregar a favoritos" class="p-icon-heart heart"><i class="fas fa-heart"></i></p>
                     </div>
                     <img src="assets/img/productos/img-post-notebook-asus-6.png" alt="image-articulo-1">
-                    <h3 id="nombre-producto">Notebook Asus Rog Strix Scar Corei9 16gb 512gb Rtx3060</h3>
-                    <span id="precio-producto">2.999.999</span>
-                    <a href="#" class="button">Añadir al carrito<i class="fas fa-shopping-cart"></i></a>
+                    <div class="contenedor-texto">
+                        <h3 id="nombre-producto">Notebook Asus Rog Strix Scar Corei9 16gb 512gb Rtx3060</h3>
+                        <span id="precio-producto">2.999.999</span>
+                        <a href="#" class="button">Agregar<i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                    
                 </div>
                 <div class="item-art">
                     <div class="contenedor-top">
@@ -120,9 +155,12 @@
                         <p title="Agregar a favoritos" class="p-icon-heart heart"><i class="fas fa-heart"></i></p>
                     </div>
                     <img src="assets/img/productos/img-post-notebook-dell-7.png" alt="image-articulo-1">
-                    <h3 id="nombre-producto">Notebook Dell Inspiron 3520 Intel Core I5</h3>
-                    <span id="precio-producto">$633.149</span>
-                    <a href="#" class="button">Añadir al carrito<i class="fas fa-shopping-cart"></i></a>
+                    <div class="contenedor-texto">
+                        <h3 id="nombre-producto">Notebook Dell Inspiron 3520 Intel Core I5</h3>
+                        <span id="precio-producto">$633.149</span>
+                        <a href="#" class="button">Agregar<i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                    
                 </div>
                 <div class="item-art">
                     <div class="contenedor-top">
@@ -130,9 +168,12 @@
                         <p title="Agregar a favoritos" class="p-icon-heart heart"><i class="fas fa-heart"></i></p>
                     </div>
                     <img src="assets/img/productos/img-post-notebook-dell-8.png" alt="image-articulo-1">
-                    <h3 id="nombre-producto">Notebook Dell Latitude 3180 negra 11.6'</h3>
-                    <span id="precio-producto">$272.999</span>
-                    <a href="#" class="button">Añadir al carrito<i class="fas fa-shopping-cart"></i></a>
+                    <div class="contenedor-texto">
+                        <h3 id="nombre-producto">Notebook Dell Latitude 3180 negra 11.6'</h3>
+                        <span id="precio-producto">$272.999</span>
+                        <a href="#" class="button">Agregar<i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                    
                 </div>
                 <div class="item-art">
                     <div class="contenedor-top">
@@ -140,9 +181,12 @@
                         <p title="Agregar a favoritos" class="p-icon-heart heart"><i class="fas fa-heart"></i></p>
                     </div>
                     <img src="assets/img/productos/img-post-notebook-hp-9.png" alt="image-articulo-1">
-                    <h3 id="nombre-producto">Notebook Hp 15-dy2061la Intel Core I3 1125g4</h3>
-                    <span id="precio-producto">$573.899</span>
-                    <a href="#" class="button">Añadir al carrito<i class="fas fa-shopping-cart"></i></a>
+                    <div class="contenedor-texto">
+                        <h3 id="nombre-producto">Notebook Hp 15-dy2061la Intel Core I3 1125g4</h3>
+                        <span id="precio-producto">$573.899</span>
+                        <a href="#" class="button">Agregar<i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                    
                 </div>
                 <div class="item-art">
                     <div class="contenedor-top">
@@ -150,9 +194,12 @@
                         <p title="Agregar a favoritos" class="p-icon-heart heart"><i class="fas fa-heart"></i></p>
                     </div>
                     <img src="assets/img/productos/img-post-notebook-hp-10.png" alt="image-articulo-1">
-                    <h3 id="nombre-producto">Notebook Hp 15 Core I5 8gb Ram 256gb Ssd</h3>
-                    <span id="precio-producto">$726.208</span>
-                    <a href="#" class="button">Añadir al carrito<i class="fas fa-shopping-cart"></i></a>
+                    <div class="contenedor-texto">
+                        <h3 id="nombre-producto">Notebook Hp 15 Core I5 8gb Ram 256gb Ssd</h3>
+                        <span id="precio-producto">$726.208</span>
+                        <a href="#" class="button">Agregar<i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                    
                 </div>
                 <div class="item-art">
                     <div class="contenedor-top">
@@ -160,9 +207,12 @@
                         <p title="Agregar a favoritos" class="p-icon-heart heart"><i class="fas fa-heart"></i></p>
                     </div>
                     <img src="assets/img/productos/img-post-notebook-msi-11.png" alt="image-articulo-1">
-                    <h3 id="nombre-producto">Notebook gamer MSI Pulse 15</h3>
-                    <span id="precio-producto">$1.819.999</span>
-                    <a href="#" class="button">Añadir al carrito<i class="fas fa-shopping-cart"></i></a>
+                    <div class="contenedor-texto">
+                        <h3 id="nombre-producto">Notebook gamer MSI Pulse 15</h3>
+                        <span id="precio-producto">$1.819.999</span>
+                        <a href="#" class="button">Agregar<i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                    
                 </div>
                 <div class="item-art">
                     <div class="contenedor-top">
@@ -170,11 +220,15 @@
                         <p title="Agregar a favoritos" class="p-icon-heart heart"><i class="fas fa-heart"></i></p>
                     </div>
                     <img src="assets/img/productos/img-post-notebook-msi-12.png" alt="image-articulo-1">
-                    <h3 id="nombre-producto">Notebook Msi Modern Ryzen 7 7730u</h3>
-                    <span id="precio-producto">$787.149</span>
-                    <a href="#" class="button">Añadir al carrito<i class="fas fa-shopping-cart"></i></a>
+                    <div class="contenedor-texto">
+                        <h3 id="nombre-producto">Notebook Msi Modern Ryzen 7 7730u</h3>
+                        <span id="precio-producto">$787.149</span>
+                        <a href="#" class="button">Agregar<i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                    
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -208,5 +262,6 @@
         </div>
     </footer>
     <script src="assets/js/heart.js"></script>
+    <script src="assets/js/carrito.js"></script>
 </body>
 </html>
