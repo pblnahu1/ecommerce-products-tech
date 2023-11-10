@@ -80,9 +80,10 @@ img {
 
 #sct-articulos .div-catalogo {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     margin: 0px 0px 50px 0px;
+    align-items: center;
 }
 
 #sct-articulos ul {
@@ -108,6 +109,23 @@ img {
     cursor: pointer;
     border-color: rgb(58, 58, 58);
 }
+
+#sct-articulos .logo-apple-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #a0a0a0;
+    /* width: 40%; */
+    margin-top: 35px;
+    padding: 0px 135px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1vmax blueviolet;
+}
+
+/* #sct-articulos .logo-apple-link img{
+    
+} */
 
 #sct-articulos .h3-titulo-catalogo {
     font-size: 3em;
@@ -176,11 +194,13 @@ img {
     font-size: 18px;
     padding: 5px;
     margin: 5px 0px;
+    width: 100%;
+    border-radius: 10px;
 }
 
 #sct-articulos .item-art .contenedor-texto>span {
     font-weight: 700;
-    border-radius: 10px;
+    
     border: 1px solid #000;
 }
 

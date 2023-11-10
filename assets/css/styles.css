@@ -40,6 +40,32 @@ hr {
     margin: 0 62px;
 }
 
+.btn-1,
+.btn-span {
+    display: inline-block;
+    padding: 10px 30px;
+    border: 2px solid #000000;
+    color: #000000;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-right: 10px;
+    border-radius: 50px;
+}
+
+.btn-1:hover {
+    background-color: #000000;
+    color: #ffffff;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-span {
+    background-color: rgb(133, 255, 133);
+    color: #000000;
+    border: 1px solid rgb(13, 181, 13);
+    filter: drop-shadow(0 0 6px rgb(13, 181, 13));
+}
+
 /* Modo Desktop */
 
 .container {
@@ -94,25 +120,8 @@ hr {
     color: #3f3b3b;
 }
 
-.botones {
+.div-botones-slider {
     margin-top: 50px;
-}
-
-.btn-1 {
-    display: inline-block;
-    padding: 15px 25px;
-    border: 2px solid #000000;
-    color: #000000;
-    font-weight: 800;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    margin-right: 10px;
-    border-radius: 50px;
-}
-
-.btn-1:hover {
-    background-color: #000000;
-    color: #ffffff;
 }
 
 .slider-img {
@@ -216,49 +225,23 @@ hr {
 .item-productos {
     min-height: 0;
     width: 100%;
-    padding: 10px;
+    padding-bottom: 15px;
 }
 
 .item-productos .nombre-producto {
     min-height: 111px;
 }
 
+/* .item-productos .informacion-producto{
+
+} */
+
 .item-productos .botones-productos {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    margin: 17px 0px;
-}
-
-.product-txt span,
-button {
-    font-size: 22px;
-    padding: 4px;
-    margin: 10px 10px 0px 0px;
-    border-radius: 15px;
-    font-weight: 800;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
-.product-txt span {
-    filter: drop-shadow(0 0 10px rgb(1, 78, 1));
-    color: rgb(24, 59, 24);
-    background-color: rgb(109, 235, 98);
-}
-
-.product-txt button {
-    background-color: #2e1ae4;
-    color: #e6e6e6;
-    cursor: pointer;
-    transition: all 0.5s ease-in-out;
-}
-
-.product-txt button {
-    filter: drop-shadow(0 0 50px #2e1ae4);
+    justify-content:flex-start;
+    margin-top: 15px;
 }
 
 .txt-noticias {
@@ -340,6 +323,15 @@ button {
 
 .btn-2:hover {
     background-color: #024591;
+}
+
+.lista-desc{
+    display: block;
+}
+
+.span-respuesta{
+    font-weight: normal;
+    color: #000;
 }
 
 .map {
@@ -454,8 +446,9 @@ button {
         font-size: 16px;
     }
 
-    .btn-1 {
+    .btn-span .btn-1{
         padding: 10px 25px;
+        margin: 12px 0;
         font-size: 14px;
     }
 
@@ -514,13 +507,21 @@ button {
     }
 
     .info-txt-txt p {
-        font-size: 13px;
         text-align: justify;
+        margin: 0px 20px;
+    }
+
+    .info-txt-txt ul{
+        text-align: left;
         margin: 0px 20px;
     }
 
     .txt-noticias {
         font-size: 14px;
+    }
+
+    .btn-1, .btn-span{
+        padding: 20px 30px;
     }
 
     .product {
@@ -536,10 +537,12 @@ button {
     .product-img {
         width: 80%;
         padding: 0px 20px;
+        text-align: center;
     }
 
     .product-img img {
         padding: 0px;
+        
     }
 
     .product-txt {
@@ -547,42 +550,24 @@ button {
         text-align: center;
     }
 
-    .product-txt span,
-    button {
-        font-size: 17px;
-        padding: 10px;
-        margin: 10px;
-        border-radius: 15px;
-        display: flex;
-        align-items: center;
+    .product-txt .botones-productos {
+        flex-direction: row;
         justify-content: center;
     }
 
-    .product-txt span {
-        border: none;
+    .item-productos .nombre-producto{
+        margin: 0px 80px;
+        display: flex;
+        align-items: center;
     }
 
-    .product-txt button {
-        border: none;
-        filter: drop-shadow(0 0 15px #2e1ae4);
-        transition: none;
-    }
-
-    .product-txt button:hover {
-        filter: drop-shadow(0 0 15px #2e1ae4);
-    }
-
-    .product-txt .botones-productos {
-        flex-direction: column;
-        margin: 0px 70px;
+    .item-productos .botones-productos > .btn-1,
+    .botones-productos > .btn-span{
+        margin: 3px;
     }
 
     hr {
         display: none;
-    }
-
-    .btn-1 {
-        margin: 12px 0;
     }
 
     .btn-2 {

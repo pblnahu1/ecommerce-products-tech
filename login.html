@@ -24,7 +24,6 @@
 
 <body>
     <header id="header">
-
         <div class="logo-header">
             <img src="assets/img/logos/logo.png" width="80" height="80" alt="">
             <a class="header-link" href="index.html">NOTEZONE</a>
@@ -32,11 +31,6 @@
         <nav id="nav-bar">
             <a class="nav-link" href="index.html" title="Página Principal">Inicio</a>
             <a href="catalogo.html" class="nav-link" title="Ver todos los productos">Catálogo</a>
-            <a href="#" class="nav-link link-carrito" title="Agregados al carrito"><i
-                    class="fas fa-shopping-cart"></i></a>
-            <a href="#" class="nav-link link-heart" title="Tus Productos Favoritos"><i class="fas fa-heart"></i></a>
-            <a href="#" class="nav-link link-sesion" title="Iniciar Sesión o Registrarse"><i
-                    class="fas fa-user"></i></a>
         </nav>
     </header>
 
@@ -65,38 +59,33 @@
                 </fieldset>
 
                 <fieldset>
-
                     <!-- <h2>Método de Pago</h2> -->
                     <h2>Método de Pago</h2>
-
-
-                    <label for="lbl-credito"><input type="radio" name="metodo-pago" class="input-metodo-pago"
-                            id="lbl-credito" value="Tarjeta de Crédito" required> Tarjeta de Crédito</label>
-
-
-                    <label for="lbl-debito"><input type="radio" name="metodo-pago" class="input-metodo-pago"
-                            id="lbl-debito" value="Tarjeta de Débito" required> Tarjeta de Débito</label>
-
-
-                    <label for="lbl-efectivo"><input type="radio" name="metodo-pago" class="input-metodo-pago"
-                            id="lbl-efectivo" value="Efectivo (Pago Fácil)" required> Efectivo (Pago Fácil)</label>
+                    <label for="lbl-credito">
+                        <input type="radio" name="metodo-pago" class="input-metodo-pago" id="lbl-credito" value="Tarjeta de Crédito" required>
+                        Tarjeta de Crédito
+                    </label>
+                    <label for="lbl-debito">
+                        <input type="radio" name="metodo-pago" class="input-metodo-pago" id="lbl-debito" value="Tarjeta de Débito" required> Tarjeta de Débito
+                    </label>
+                    <label for="lbl-efectivo">
+                        <input type="radio" name="metodo-pago" class="input-metodo-pago" id="lbl-efectivo" value="Efectivo (Pago Fácil)" required>
+                        Efectivo (Pago Fácil)
+                    </label>
                 </fieldset>
 
                 <input type="submit" value="Registrarse" class="btn-submit">
             </form>
         </section>
 
-
         <section class="sct-form">
-
             <form action="" method="post">
                 <h1>Iniciar Sesión</h1>
                 <fieldset>
-                    <label for="lbl-email">Email</label>
-                    <input type="email" name="email" class="input-email" id="lbl-email" placeholder="example@gmail.com"
-                        required>
-                    <label for="lbl-clave">Contraseña</label>
-                    <input type="password" name="clave" class="input-clave" id="lbl-clave" required>
+                    <label for="lbl-email-login">Email</label>
+                    <input type="email" name="email" class="input-email" id="lbl-email-login" placeholder="example@gmail.com" required>
+                    <label for="lbl-clave-login">Contraseña</label>
+                    <input type="password" name="clave" class="input-clave" id="lbl-clave-login" required>
                 </fieldset>
                 <input type="submit" value="Entrar" class="btn-submit">
             </form>
@@ -128,11 +117,7 @@
                 <a href="https://www.youtube.com" class="social-icon"><i class="fab fa-youtube"></i> Youtube</a>
             </div>
             <div class="item">
-                <span class="privacidad-span">Esta página respeta tu privacidad y se compromete a proteger la
-                    información
-                    personal que compartes con nosotros. Consulta nuestra política de privacidad para obtener más
-                    detalles
-                    sobre cómo manejamos y utilizamos tus datos.</span>
+                <span class="privacidad-span">Esta página respeta tu privacidad y se compromete a proteger la información personal que compartes con nosotros. Consulta nuestra política de privacidad para obtener más detalles sobre cómo manejamos y utilizamos tus datos.</span>
             </div>
         </div>
     </footer>
