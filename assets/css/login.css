@@ -1,21 +1,20 @@
-main{
+main {
     max-width: 80%;
     margin: 0 auto;
     display: flex;
 }
 
-.sct-form{
+.sct-form {
     padding: 70px 0;
     width: 45%;
     margin: 0 auto;
-    display: grid;    
+    display: grid;
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* border-radius: 25px; */
     padding: 57px;
     height: 100%;
     place-content: center;
@@ -23,20 +22,20 @@ form{
     transition: all 0.5s ease-in-out;
 }
 
-form:hover{
+form:hover {
     box-shadow: 1px 1px 10vmax rgb(113, 113, 255);
 }
 
-form h1{
+form h1 {
     text-transform: uppercase;
     font-size: 34px;
 }
 
-form span{
+form span {
     display: block;
 }
 
-fieldset{
+fieldset {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -45,7 +44,7 @@ fieldset{
     width: 100%;
 }
 
-label{
+label {
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -53,12 +52,12 @@ label{
     margin: 20px 0px 0px 0px;
 }
 
-input{
+input {
     padding: 10px 5px;
     font-size: 18px;
 }
 
-input[type="submit"]{
+input[type="submit"] {
     width: 80%;
     border: 1px solid blue;
     background-color: rgb(172, 172, 248);
@@ -67,8 +66,27 @@ input[type="submit"]{
     transition: all 0.3s ease-in-out;
 }
 
-input[type="submit"]:hover{
+input[type="submit"]:hover {
     cursor: pointer;
     box-shadow: 5px 5px blue;
     transform: scale(1.04);
+}
+
+.txt-ubi {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15px 0px 30px 0px;
+    font-size: 35px;
+}
+
+.map {
+    /* filter: grayscale(100%) invert(92%) contrast(93%); */
+    filter: brightness(0.9);
+}
+
+.txt-noticias {
+    padding: 35px;
+    font-size: 35px;
+    text-align: center;
+    text-transform: uppercase;
 }

@@ -14,7 +14,7 @@ footer {
 .item {
     flex-basis: 45%;
     margin-bottom: 20px;
-    
+
 }
 
 .social-icon {
@@ -40,12 +40,12 @@ footer {
 }
 
 /* Mobile */
-@media(max-width:1350px){
-    .footer-container{
+@media(max-width:1350px) {
+    .footer-container {
         display: block;
     }
 
-    .item{
+    .item {
         flex-basis: unset;
         margin: 50px 0;
     }
