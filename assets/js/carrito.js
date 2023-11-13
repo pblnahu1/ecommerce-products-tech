@@ -1,9 +1,11 @@
 
 document.addEventListener('DOMContentLoaded', function () {
     var botonesAgregarCarrito = document.querySelectorAll('.agregar-carrito');
+    var mensajeCarrito = document.querySelector('.msg-carrito');
     var total = 0;
     botonesAgregarCarrito.forEach(function (boton) {
         boton.addEventListener('click', function () {
+            mensajeCarrito.style.display = "none";
             var nombreProducto = boton.getAttribute('data-nombre');
             var precioProducto = parseFloat(boton.getAttribute('data-precio'));
             var imgProducto = boton.getAttribute('data-img');
@@ -14,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             total += precioProducto;
             var contenedorTotalProductos = document.getElementById('total');
-            contenedorTotalProductos.innerHTML = 'Total: $' + total;
+            contenedorTotalProductos.innerHTML = '<span>Total: $' + total + '</span>';
 
             var contenedorCarrito = document.getElementById('contenedor-carrito');
             contenedorCarrito.appendChild(nuevoProducto);
@@ -31,3 +33,6 @@ function mostrarCarrito() {
     }
 }
 
+function numeroProductosAgregados() {
+    
+}

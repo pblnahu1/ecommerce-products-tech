@@ -33,21 +33,22 @@
             <a class="nav-link" href="index.html" title="Página Principal">Inicio</a>
 
             <button class="nav-link link-carrito" id="carrito" title="Agregados al carrito"
-                onclick="mostrarCarrito()"><i class="fas fa-shopping-cart"></i></button>
-            <div id="numero">
-                <!-- Suma de productos agregandose -->
-            </div>
+                onclick="mostrarCarrito()"><i class="fas fa-shopping-cart"><div id="numero">0</div></i></button>
+            
             <div id="miDiv" style="display: none;">
                 <div class="informacionCompra" id="informacionCompra">
-                    <h2 class="title-carrito">Mi Carrito</h2>
-                    <button class="btn-cerrar-carrito" id="btn-cerrar-carrito" onclick="mostrarCarrito()">X</button>
+                    <h2 class="title-carrito">Mi Carrito <i class="fas fa-shopping-cart" style="color: blue;"></i></h2>
+                    <button class="btn-cerrar-carrito" id="btn-cerrar-carrito" onclick="mostrarCarrito()" title="Cerrar">X</button>
                 </div>
                 <div class="contenedor-carrito" id="contenedor-carrito">
                     <!-- Productos Agregados -->
+                    <span class="msg-carrito">No tienes nada agregado al carrito. ¡Agrega ahora!</span>
                 </div>
                 <div class="contenedor-total-btn">
-                    <div class="total" id="total"></div>
-                    <button class="btn-finalizar-compra" id="btn-finalizarcompra">Finalizar Compra</button>
+                    <div class="total" id="total">Total: $</div>
+                    <button class="btn-finalizar-compra" id="btn-finalizarcompra">
+                        <span class="text">Finalizar Compra</span>
+                    </button>
                 </div>
             </div>
 
@@ -72,11 +73,11 @@
                     <li><img src="assets/img/logos/img-msi.svg" alt="Logo de MSI"></li>
                 </ul>
 
-                <a href="#">
+                <!-- <a href="#">
                     <div class="logo-apple-link">
                         <img src="assets/img/logos/logo-apple-producto.png" alt="Logo de Apple">
                     </div>
-                </a>
+                </a> -->
             </div>
             <h3 class="h3-titulo-catalogo"><b>Catálogo</b></h3>
             <div class="contenedor">

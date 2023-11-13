@@ -148,6 +148,7 @@ img {
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 0px 35px;
 }
 
 #sct-articulos .item-art {

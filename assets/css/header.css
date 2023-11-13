@@ -100,7 +100,7 @@ button {
     margin: 0 11%;
     overflow-y: scroll;
     overflow-x: hidden;
-    height: 600px;
+    height: 70vh;
     border: 1px solid #000;
 }
 
@@ -119,7 +119,7 @@ button {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     position: sticky;
     top: 0;
     padding: 20px;
@@ -129,26 +129,28 @@ button {
 .informacionCompra h2 {
     font-weight: 300;
     font-size: 32px;
-    width: 60%;
 }
 
 .btn-cerrar-carrito {
     font-weight: 800;
     padding: 10px 15px;
     cursor: pointer;
-    font-size: 20px;
     border: none;
     border-radius: 10px;
-    box-shadow: 1px 1px 1vmax #ff0000;
-    background-color: #ff7979;
-    color: #850101;
+    background-color: #000;
+    color: #fff;
+}
+
+.btn-cerrar-carrito:hover{
+    background-color: #313131;
 }
 
 .contenedor-carrito {
     border: 1px solid #a0a0a0;
     border-radius: 10px;
-    margin: 20px 50px;
-    padding: 20px;
+    margin: 14px 50px;
+    padding: 0px 20px;
+    min-height: 43vh;
 }
 
 .contenedor-total-btn {
@@ -164,22 +166,71 @@ button {
 }
 
 .total {
-    font-size: 27px;
-    font-style: italic;
-    color: rgb(0, 173, 0);
+    font-size: 25px;
+    font-family: Phantomsans, sans-serif;
 }
 
-.btn-finalizar-compra {
+/* .btn-finalizar-compra {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 800;
     padding: 10px;
     cursor: pointer;
     font-size: 20px;
     border: none;
     border-radius: 10px;
-    box-shadow: 1px 1px 1vmax #90909c;
     background-color: #000;
     color: #fff;
 }
+
+.btn-finalizar-compra:hover{
+    background-color: #313131;
+} */
+
+.btn-finalizar-compra{
+    background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+    border-radius: 10px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    font-family: Phantomsans, sans-serif;
+    font-size: 18px;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-finalizar-compra:active, .btn-finalizar-compra:hover{
+    outline: 0;
+}
+
+.btn-finalizar-compra span{
+    background-color: rgb(5, 6, 45);
+    padding: 16px 24px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+}
+
+.btn-finalizar-compra:hover span{
+    background: none;
+}
+
+.btn-finalizar-compra:active{
+    transform: scale(0.9);
+}
+
 
 /* Clases creadas desde JS */
 .producto-carrito {
@@ -203,6 +254,23 @@ button {
     justify-content: center;
     align-items: center;
     padding: 15px 0px;
+}
+
+#numero{
+    width: 0;
+    height: 0;
+    position: fixed;
+    top: 22px;
+    background-color: red;
+    left: 72.8%;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    padding: 13px;
+    border-radius: 100px;
 }
 
 /* Mobile */
