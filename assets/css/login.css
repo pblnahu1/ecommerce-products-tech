@@ -90,3 +90,17 @@ input[type="submit"]:hover {
     text-align: center;
     text-transform: uppercase;
 }
+
+@media (max-width: 991px){
+    main{
+        display: block;
+    }
+
+    .sct-form{
+        width: 100%;
+    }
+
+    form{
+        padding: 15px;
+    }
+}
