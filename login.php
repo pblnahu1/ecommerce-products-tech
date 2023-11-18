@@ -1,4 +1,4 @@
-<?php include('assets/php/conex.php'); ?>
+<?php include("assets/php/conex.php"); ?>
 
 <!DOCTYPE html>
 <html lang="en">

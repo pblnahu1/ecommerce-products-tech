@@ -1,62 +1,62 @@
 [
     {
-        "nombre": "Notebook Lenovo 15.6' Legion 5",
-        "precio": "1249999",
+        "nombre": "Notebook Lenovo 15.6 Pulgadas Legion 5",
+        "precio": 1249999,
         "img": "assets/img/productos/img-post-notebook-lenovo-1.png"
     },
     {
         "nombre": "Notebook Lenovo IP 3 14ITL6 Core I3 8G",
-        "precio": "714996",
+        "precio": 714996,
         "img": "assets/img/productos/img-post-notebook-lenovo-2.png"
     },
     {
         "nombre": "Notebook Lenovo V15 I3 8G",
-        "precio": "670141",
+        "precio": 670141,
         "img": "assets/img/productos/img-post-notebook-lenovo-3.png"
     },
     {
-        "nombre": "Notebook Lenovo 15.6' Core I7",
-        "precio": "2829501",
+        "nombre": "Notebook Lenovo 15.6 Pulgadas Core I7",
+        "precio": 2829501,
         "img": "assets/img/productos/img-post-notebook-lenovo-4.png"
     },
     {
         "nombre": "Notebook Asus Tuf F15 I5-11400h 32gb Ssd",
-        "precio": "959169",
+        "precio": 959169,
         "img": "assets/img/productos/img-post-notebook-asus-5.png"
     },
     {
         "nombre": "Notebook Asus Rog Strix Scar Corei9 16gb 512gb Rtx3060",
-        "precio": "2999999",
+        "precio": 2999999,
         "img": "assets/img/productos/img-post-notebook-asus-6.png"
     },
     {
         "nombre": "Notebook Dell Inspiron 3520 Intel Core I5",
-        "precio": "633149",
+        "precio": 633149,
         "img": "assets/img/productos/img-post-notebook-dell-7.png"
     },
     {
-        "nombre": "Notebook Dell Latitude 3180 negra 11.6'",
-        "precio": "272999",
+        "nombre": "Notebook Dell Latitude 3180 negra 11.6 Pulgadas",
+        "precio": 272999,
         "img": "assets/img/productos/img-post-notebook-dell-8.png"
     },
     {
         "nombre": "Notebook Hp 15-dy2061la Intel Core I3 1125g4",
-        "precio": "573899",
+        "precio": 573899,
         "img": "assets/img/productos/img-post-notebook-hp-9.png"
     },
     {
         "nombre": "Notebook Hp 15 Core I5 8gb Ram 256gb Ssd",
-        "precio": "726208",
+        "precio": 726208,
         "img": "assets/img/productos/img-post-notebook-hp-10.png"
     },
     {
         "nombre": "Notebook gamer MSI Pulse 15",
-        "precio": "1819999",
+        "precio": 1819999,
         "img": "assets/img/productos/img-post-notebook-msi-11.png"
     },
     {
         "nombre": "Notebook Msi Modern Ryzen 7 7730u",
-        "precio": "787149",
+        "precio": 787149,
         "img": "assets/img/productos/img-post-notebook-msi-12.png"
     }
 ]

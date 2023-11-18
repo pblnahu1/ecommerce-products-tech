@@ -112,7 +112,7 @@
                         </div>
                         <img src="assets/img/productos/img-post-notebook-lenovo-1.png" alt="imagen-articulo-lenovo-1-Notebook Lenovo 15.6' Legion 5">
                         <div class="contenedor-texto">
-                            <h3 id="nombre-producto">Notebook Lenovo 15.6' Legion 5</h3>
+                            <h3 id="nombre-producto">Notebook Lenovo 15.6 Pulgadas Legion 5</h3>
                             <span id="precio-producto">$1.249.999</span>
                             <button class="button agregar-carrito">Agregar<i class="fas fa-shopping-cart"></i></button>
                         </div>
@@ -150,7 +150,7 @@
                         </div>
                         <img src="assets/img/productos/img-post-notebook-lenovo-4.png" alt="imagen-articulo-lenovo-4-Notebook Lenovo 15.6' Core I7">
                         <div class="contenedor-texto">
-                            <h3 id="nombre-producto">Notebook Lenovo 15.6' Core I7</h3>
+                            <h3 id="nombre-producto">Notebook Lenovo 15.6 Pulgadas Core I7</h3>
                             <span id="precio-producto">$2.829.501</span>
                             <button class="button agregar-carrito">Agregar<i class="fas fa-shopping-cart"></i></button>
                         </div>
@@ -202,7 +202,7 @@
                         </div>
                         <img src="assets/img/productos/img-post-notebook-dell-8.png" alt="imagen-articulo-dell-8-Notebook Dell Latitude 3180 negra 11.6'">
                         <div class="contenedor-texto">
-                            <h3 id="nombre-producto">Notebook Dell Latitude 3180 negra 11.6'</h3>
+                            <h3 id="nombre-producto">Notebook Dell Latitude 3180 negra 11.6 Pulgadas</h3>
                             <span id="precio-producto">$272.999</span>
                             <button class="button agregar-carrito">Agregar<i class="fas fa-shopping-cart"></i></button>
                         </div>
