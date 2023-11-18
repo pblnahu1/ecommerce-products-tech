@@ -1,3 +1,5 @@
+<?php include('assets/php/conex.php'); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,7 +28,7 @@
     <header id="header">
         <div class="logo-header">
             <img src="assets/img/logos/logo.png" width="80" height="80" alt="Logo Principal">
-            <a class="header-link" href="index.html">NOTEZONE</a>
+            <a class="header-link" href="index.php">NOTEZONE</a>
         </div>
 
         <input type="checkbox" id="menu" />
@@ -36,7 +38,7 @@
 
         <nav id="nav-bar" class="nav-bar">
             <a class="nav-link" href="index.html" title="Página Principal">Inicio</a>
-            <a href="catalogo.html" class="nav-link" title="Ver todos los productos">Catálogo</a>
+            <a href="catalogo.php" class="nav-link" title="Ver todos los productos">Catálogo</a>
         </nav>
     </header>
 

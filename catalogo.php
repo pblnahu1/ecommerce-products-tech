@@ -32,7 +32,7 @@
     <header id="header">
         <div class="logo-header">
             <img src="assets/img/logos/logo.png" width="80" height="80" alt="Logo Principal">
-            <a class="header-link" href="index.html">NOTEZONE</a>
+            <a class="header-link" href="index.php">NOTEZONE</a>
         </div>
 
         <input type="checkbox" id="menu" />
@@ -41,7 +41,7 @@
         </label>
         
         <nav id="nav-bar" class="nav-bar">
-            <a class="nav-link" href="index.html" title="Página Principal">Inicio</a>
+            <a class="nav-link" href="index.php" title="Página Principal">Inicio</a>
 
             <button class="nav-link link-carrito" id="carrito" title="Agregados al carrito"
                 onclick="mostrarCarrito()"><i class="fas fa-shopping-cart"><div id="numero">0</div></i></button>
@@ -76,7 +76,7 @@
                 </div>
             </div>
 
-            <a href="login.html" class="nav-link link-sesion" title="Iniciar Sesión o Registrarse"><i class="fas fa-user"></i></a>
+            <a href="login.php" class="nav-link link-sesion" title="Iniciar Sesión o Registrarse"><i class="fas fa-user"></i></a>
         </nav>
     </header>
 

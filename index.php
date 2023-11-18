@@ -37,8 +37,8 @@
 
         <nav id="nav-bar" class="nav-bar">
             <a class="nav-link" href="#" title="Página Principal">Inicio</a>
-            <a href="catalogo.html" class="nav-link" title="Ver todos los productos">Catálogo</a>
-            <a href="login.html" class="nav-link link-sesion" title="Iniciar Sesión o Registrarse"><i class="fas fa-user"></i></a>
+            <a href="catalogo.php" class="nav-link" title="Ver todos los productos">Catálogo</a>
+            <a href="login.php" class="nav-link link-sesion" title="Iniciar Sesión o Registrarse"><i class="fas fa-user"></i></a>
         </nav>
     </header>
 
