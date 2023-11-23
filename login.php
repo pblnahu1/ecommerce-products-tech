@@ -1,4 +1,12 @@
-<?php include("assets/php/conex.php"); ?>
+<?php
+
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+
+include("assets/php/conex.php"); 
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -20,8 +28,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
 
     <!-- iconos fontawesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 
 <body>
@@ -37,14 +44,15 @@
         </label>
 
         <nav id="nav-bar" class="nav-bar">
-            <a class="nav-link" href="index.html" title="Página Principal">Inicio</a>
-            <a href="catalogo.php" class="nav-link" title="Ver todos los productos">Catálogo</a>
+            <a class="nav-link" href="index.php" title="Página Principal">Inicio</a>
+            <!-- <a href="catalogo.php" class="nav-link" title="Ver todos los productos">Catálogo</a> -->
         </nav>
     </header>
 
     <main>
+
         <section class="sct-form">
-            <form action="" method="post">
+            <form action="assets/php/registro.php" method="post">
                 <h1>Crear Usuario</h1>
                 <fieldset>
                     <label for="lbl-nombre">Nombre</label>
@@ -57,13 +65,11 @@
 
                 <fieldset>
                     <label for="lbl-email">Correo Electrónico</label>
-                    <input type="email" name="email" class="input-email" id="lbl-email" placeholder="example@gmail.com"
-                        required>
+                    <input type="email" name="email" class="input-email" id="lbl-email" placeholder="example@gmail.com" required>
                     <label for="lbl-clave">Crear Contraseña</label>
                     <input type="password" name="clave" class="input-clave" id="lbl-clave" required>
                     <label for="lbl-confirmar-clave">Confirmar Contraseña</label>
-                    <input type="password" name="confirmar-clave" class="input-confirmar-clave" id="lbl-confirmar-clave"
-                        required>
+                    <input type="password" name="confirmar-clave" class="input-confirmar-clave" id="lbl-confirmar-clave" required>
                 </fieldset>
 
                 <fieldset>
@@ -82,20 +88,28 @@
                     </label>
                 </fieldset>
 
-                <input type="submit" value="Registrarse" class="btn-submit">
+                <input type="submit" name="enviar-registro" value="Registrarse" class="btn-submit">
+                <?php include("assets/php/registro.php"); ?>
             </form>
         </section>
 
         <section class="sct-form">
-            <form action="" method="post">
+            <form action="assets/php/iniciar-sesion.php" method="post">
                 <h1>Iniciar Sesión</h1>
                 <fieldset>
                     <label for="lbl-email-login">Email</label>
-                    <input type="email" name="email" class="input-email" id="lbl-email-login" placeholder="example@gmail.com" required>
+                    <input type="email" name="email-login" class="input-email" id="lbl-email-login" placeholder="example@gmail.com" required>
                     <label for="lbl-clave-login">Contraseña</label>
-                    <input type="password" name="clave" class="input-clave" id="lbl-clave-login" required>
+                    <input type="password" name="clave-login" class="input-clave" id="lbl-clave-login" required>
                 </fieldset>
-                <input type="submit" value="Entrar" class="btn-submit">
+                <input type="submit" name="enviar-login" value="Entrar" class="btn-submit">
+                <?php
+                    include("assets/php/iniciar-sesion.php"); 
+                    if(isset($_SESSION['error-login'])){
+                        echo "<p>{$_SESSION['error-login']}</p>";
+                        unset($_SESSION['error-login']);
+                    }
+                ?>
             </form>
         </section>
     </main>
@@ -104,10 +118,7 @@
         <div class="txt-ubi">
             <h2>Ubicación</h2>
         </div>
-        <iframe title="Mapa" class="map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26253.896922674234!2d-58.388026511442156!3d-34.66134141832057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3335230bd052b%3A0x9d632a18eea90a31!2sAvellaneda%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1698596364060!5m2!1ses!2sar"
-            width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
+        <iframe title="Mapa" class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26253.896922674234!2d-58.388026511442156!3d-34.66134141832057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3335230bd052b%3A0x9d632a18eea90a31!2sAvellaneda%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1698596364060!5m2!1ses!2sar" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
         </iframe>
     </section>
 

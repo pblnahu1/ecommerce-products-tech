@@ -1,3 +1,13 @@
+<?php
+
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+
+include("assets/php/conex.php"); 
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,8 +29,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
 
     <!-- iconos fontawesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <!-- JavaScript -->
     <script src="assets/js/mostrar-ventana.js" defer></script>
@@ -39,13 +48,14 @@
         <label for="menu">
             <i class="fas fa-bars menu-icon-mobile"></i>
         </label>
-        
+
         <nav id="nav-bar" class="nav-bar">
             <a class="nav-link" href="index.php" title="Página Principal">Inicio</a>
 
-            <button class="nav-link link-carrito" id="carrito" title="Agregados al carrito"
-                onclick="mostrarCarrito()"><i class="fas fa-shopping-cart"><div id="numero">0</div></i></button>
-            
+            <button class="nav-link link-carrito" id="carrito" title="Agregados al carrito" onclick="mostrarCarrito()"><i class="fas fa-shopping-cart">
+                    <div id="numero">0</div>
+                </i></button>
+
             <div id="miDiv" style="display: none;">
                 <div class="informacionCompra" id="informacionCompra">
                     <h2 class="title-carrito">Mi Carrito <i class="fas fa-shopping-cart" style="color: blue;"></i></h2>
@@ -76,11 +86,23 @@
                 </div>
             </div>
 
-            <a href="login.php" class="nav-link link-sesion" title="Iniciar Sesión o Registrarse"><i class="fas fa-user"></i></a>
+            <a href="login.php" class="nav-link link-sesion" title="Iniciar Sesión o Registrarse">Cerrar Sesión <i class="fas fa-sign-out-alt"></i></a>
+            <!-- <a href="" class="nav-link link-sesion" title="Cerrar Sesión"><i class="fas"></i></a> -->
         </nav>
     </header>
 
     <main>
+        <?php
+        if (isset($_SESSION['nombre_usuario']) && isset($_SESSION['apellido_usuario'])) {
+            $nombre = $_SESSION['nombre_usuario'];
+            $apellido = $_SESSION['apellido_usuario'];
+        ?>
+            <div class="container-bienvenida">
+                <p class="text-bienvenida">¡Bienvenid@ <?php echo $nombre . " " . $apellido; ?>!</p>
+            </div>
+        <?php
+        }
+        ?>
         <section id="sct-slider-catalogo">
             <h1>La notebook de tus sueños</h1>
         </section>
@@ -260,7 +282,7 @@
                         </div>
 
                     </div>
-                
+
                 </div>
             </div>
         </section>
@@ -269,10 +291,7 @@
             <div class="txt-ubi">
                 <h2>Ubicación</h2>
             </div>
-            <iframe title="Mapa" class="map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26253.896922674234!2d-58.388026511442156!3d-34.66134141832057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3335230bd052b%3A0x9d632a18eea90a31!2sAvellaneda%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1698596364060!5m2!1ses!2sar"
-                width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
+            <iframe title="Mapa" class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26253.896922674234!2d-58.388026511442156!3d-34.66134141832057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3335230bd052b%3A0x9d632a18eea90a31!2sAvellaneda%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1698596364060!5m2!1ses!2sar" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
             </iframe>
         </section>
 
@@ -297,4 +316,5 @@
         </div>
     </footer>
 </body>
+
 </html>

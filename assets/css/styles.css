@@ -28,14 +28,6 @@ body::-webkit-scrollbar-thumb {
 
 /* Fin de estilos a la barra de desplazamiento */
 
-/* Estilos a la barra de desplazamiento para firefox */
-body {
-    scrollbar-width: thin;
-    scrollbar-color: #a0a0a0 #000000;
-}
-
-/* Fin de estilos a la barra de desplazamiento para firefox */
-
 hr {
     margin: 0 62px;
 }
@@ -67,6 +59,20 @@ hr {
 }
 
 /* Modo Desktop */
+
+.container-bienvenida{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px;
+    width: 100%;
+    margin: 0;
+    height: auto;
+    background-color: rgb(149, 255, 149);
+    color: rgb(0, 141, 0);
+    font-size: 25px;
+}
 
 .container {
     max-width: 1400px;

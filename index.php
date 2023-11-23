@@ -37,7 +37,7 @@
 
         <nav id="nav-bar" class="nav-bar">
             <a class="nav-link" href="#" title="Página Principal">Inicio</a>
-            <a href="catalogo.php" class="nav-link" title="Ver todos los productos">Catálogo</a>
+            <!-- <a href="catalogo.php" class="nav-link" title="Ver todos los productos">Catálogo</a> -->
             <a href="login.php" class="nav-link link-sesion" title="Iniciar Sesión o Registrarse"><i class="fas fa-user"></i></a>
         </nav>
     </header>
@@ -54,7 +54,7 @@
                                 <p>No dejes pasar esta oportunidad única de adquirir nuestro increíble producto</p>
                                 <div class="div-botones-slider">
                                     <span class="btn-span">$1.819.999</span>
-                                    <a href="catalogo.html" class="btn-1">Ver <i class="fas fa-arrow-right"></i></a>
+                                    <a href="#" class="btn-1">Ver <i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
                             <div class="slider-img">
@@ -70,7 +70,7 @@
                                 <p>¡Descubre el producto que cambiará tu vida!</p>
                                 <div class="div-botones-slider">
                                     <span class="btn-span">$2.999.999</span>
-                                    <a href="catalogo.html" class="btn-1">Ver <i class="fas fa-arrow-right"></i></a>
+                                    <a href="#" class="btn-1">Ver <i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
                             <div class="slider-img">
@@ -86,7 +86,7 @@
                                 <p>Hazte con el producto más innovador del mercado y disfruta de sus beneficios</p>
                                 <div class="div-botones-slider">
                                     <span class="btn-span">$714.996</span>
-                                    <a href="catalogo.html" class="btn-1">Ver <i class="fas fa-arrow-right"></i></a>
+                                    <a href="#" class="btn-1">Ver <i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
                             <div class="slider-img">
@@ -136,7 +136,7 @@
                                         </div>
                                         <div class="botones-productos">
                                             <span class="btn-span">$669.599</span>
-                                            <a href="catalogo.html" class="btn-1">VER <i class="fas fa-arrow-right"></i></a>
+                                            <a href="#" class="btn-1">VER <i class="fas fa-arrow-right"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -167,7 +167,7 @@
                                         </div>
                                         <div class="botones-productos">
                                             <span class="btn-span">$854.995</span>
-                                            <a href="catalogo.html" class="btn-1">VER <i class="fas fa-arrow-right"></i></a>
+                                            <a href="#" class="btn-1">VER <i class="fas fa-arrow-right"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -197,7 +197,7 @@
                                         </div>
                                         <div class="botones-productos">
                                             <span class="btn-span">$1.497.777</span>
-                                            <a href="catalogo.html" class="btn-1">VER <i class="fas fa-arrow-right"></i></a>
+                                            <a href="#" class="btn-1">VER <i class="fas fa-arrow-right"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -239,7 +239,7 @@
                                         </div>
                                         <div class="botones-productos">
                                             <span class="btn-span">$1.899.999</span>
-                                            <a href="catalogo.html" class="btn-1">VER <i class="fas fa-arrow-right"></i></a>
+                                            <a href="#" class="btn-1">VER <i class="fas fa-arrow-right"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -269,7 +269,7 @@
                                         </div>
                                         <div class="botones-productos">
                                             <span class="btn-span">$1.999.999</span>
-                                            <a href="catalogo.html" class="btn-1">VER <i class="fas fa-arrow-right"></i></a>
+                                            <a href="#" class="btn-1">VER <i class="fas fa-arrow-right"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -299,7 +299,7 @@
                                         </div>
                                         <div class="botones-productos">
                                             <span class="btn-span">$2.064.999</span>
-                                            <a href="catalogo.html" class="btn-1">VER <i class="fas fa-arrow-right"></i></a>
+                                            <a href="#" class="btn-1">VER <i class="fas fa-arrow-right"></i></a>
                                         </div>
                                     </div>
                                 </div>
