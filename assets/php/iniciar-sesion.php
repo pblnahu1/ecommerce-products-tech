@@ -22,7 +22,7 @@ if (isset($_POST['enviar-login'])) {
             header('Location:../../catalogo.php');
             exit();
         } else {
-            $_SESSION['error-login'] = 'Ocurrió un error, email o contraseña son inválidos. Intente otra vez.';
+            $_SESSION['error-login'] = 'Ocurrió un error: Email o Contraseña son inválidos. Intente otra vez.';
             header('Location:../../login.php');   
             exit();
         }

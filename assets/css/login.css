@@ -28,7 +28,7 @@ form:hover {
 
 form h1 {
     text-transform: uppercase;
-    font-size: 34px;
+    /* font-size: 34px; */
 }
 
 form span {
@@ -48,7 +48,7 @@ label {
     display: flex;
     align-items: center;
     flex-direction: row;
-    font-size: 18px;
+    /* font-size: 18px; */
     margin: 20px 0px 0px 0px;
 }
 
@@ -89,6 +89,45 @@ input[type="submit"]:hover {
     font-size: 35px;
     text-align: center;
     text-transform: uppercase;
+}
+
+.div-msg-error, .div-msg-cerrar-sesion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    margin: 25px 10px 0px 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.div-msg-error{
+    background-color: rgb(255, 184, 184);
+    border: 1px solid red;
+}
+
+.div-msg-cerrar-sesion{
+    background-color: rgb(185, 203, 255);
+    border: 1px solid blue;
+    width: 60%;
+    margin: 15px auto;
+}
+
+.div-msg-cerrar-sesion > p{
+    color: #001aff;
+}
+
+.div-msg-error > p{ 
+    color: rgb(112, 0, 0);
+}
+
+.div-msg-error > button, .div-msg-cerrar-sesion > button{
+    border: none;
+    background-color: #000;
+    color: #fff;
+    margin-top: 15px;
+    padding: 10px 15px;
 }
 
 @media (max-width: 991px){

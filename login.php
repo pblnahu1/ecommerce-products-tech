@@ -4,7 +4,7 @@ if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
 
-include("assets/php/conex.php"); 
+include("assets/php/conex.php");
 
 ?>
 
@@ -29,6 +29,9 @@ include("assets/php/conex.php");
 
     <!-- iconos fontawesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- JS -->
+    <script src="assets/js/mostrar-ventana.js" defer></script>
 </head>
 
 <body>
@@ -48,7 +51,18 @@ include("assets/php/conex.php");
             <!-- <a href="catalogo.php" class="nav-link" title="Ver todos los productos">Catálogo</a> -->
         </nav>
     </header>
-
+    <?php
+    // Verifico si existe el mensaje en la variable $_SESSION de cerrar-sesion.php y lo muestro
+    if (isset($_SESSION['msgCerrarSesion'])) {
+    ?>
+        <div class="div-msg-cerrar-sesion" id="div-msg-cerrar-sesion">
+            <p><?php echo $_SESSION['msgCerrarSesion']; ?></p>
+            <button class="btn-cerrar" id="btn-cerrar">Cerrar</button>
+        </div>
+    <?php
+        unset($_SESSION['msgCerrarSesion']);
+    }
+    ?>
     <main>
 
         <section class="sct-form">
@@ -94,6 +108,7 @@ include("assets/php/conex.php");
         </section>
 
         <section class="sct-form">
+            
             <form action="assets/php/iniciar-sesion.php" method="post">
                 <h1>Iniciar Sesión</h1>
                 <fieldset>
@@ -104,11 +119,18 @@ include("assets/php/conex.php");
                 </fieldset>
                 <input type="submit" name="enviar-login" value="Entrar" class="btn-submit">
                 <?php
-                    include("assets/php/iniciar-sesion.php"); 
-                    if(isset($_SESSION['error-login'])){
-                        echo "<p>{$_SESSION['error-login']}</p>";
-                        unset($_SESSION['error-login']);
-                    }
+                include("assets/php/iniciar-sesion.php");
+                if (isset($_SESSION['error-login'])) {
+                ?>
+                    <div class="div-msg-error" id="div-msg-error">
+                        <p><?php echo $_SESSION["error-login"]; ?></p>
+                        <button class="btn-cerrar" id="btn-cerrar">Cerrar</button>
+                    </div>
+                <?php
+                    unset($_SESSION['error-login']);
+                }
+
+
                 ?>
             </form>
         </section>

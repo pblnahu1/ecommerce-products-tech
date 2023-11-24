@@ -60,3 +60,4 @@ La tabla Carrito_Producto es la tabla intermedia que maneja la relación muchos 
 Carritos y Productos. Aquí, cada registro representa la asociación de un producto con 
 un carrito específico.
 */
+

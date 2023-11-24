@@ -52,6 +52,20 @@ img {
     max-width: 300px;
 }
 
+.container-bienvenida {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px;
+    width: 100%;
+    margin: 0;
+    height: auto;
+    background-color: rgb(149, 255, 149);
+    color: rgb(0, 141, 0);
+    font-size: 25px;
+}
+
 #sct-slider-catalogo {
     background-image: linear-gradient(0deg,
             rgb(0, 0, 0, 0.2),

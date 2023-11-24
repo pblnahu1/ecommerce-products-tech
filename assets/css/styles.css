@@ -60,20 +60,6 @@ hr {
 
 /* Modo Desktop */
 
-.container-bienvenida{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 0px;
-    width: 100%;
-    margin: 0;
-    height: auto;
-    background-color: rgb(149, 255, 149);
-    color: rgb(0, 141, 0);
-    font-size: 25px;
-}
-
 .container {
     max-width: 1400px;
     margin: 0 auto;

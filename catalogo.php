@@ -86,7 +86,7 @@ include("assets/php/conex.php");
                 </div>
             </div>
 
-            <a href="login.php" class="nav-link link-sesion" title="Iniciar Sesión o Registrarse">Cerrar Sesión <i class="fas fa-sign-out-alt"></i></a>
+            <a href="assets/php/cerrar-sesion.php" class="nav-link link-sesion" title="Iniciar Sesión o Registrarse" onclick="return confirm('¿Realmente deseas Cerrar Sesión?')">Cerrar Sesión <i class="fas fa-sign-out-alt"></i></a>
             <!-- <a href="" class="nav-link link-sesion" title="Cerrar Sesión"><i class="fas"></i></a> -->
         </nav>
     </header>

@@ -19,3 +19,10 @@ function mostrarCarrito() {
         miDiv.style.display = "none";
     }
 }
+
+const contenedor = document.querySelector('.div-msg-error, .div-msg-cerrar-sesion');
+const btn = document.getElementById('btn-cerrar');
+
+btn.addEventListener('click', function() {
+    contenedor.style.display = 'none';
+})
