@@ -26,3 +26,12 @@ const btn = document.getElementById('btn-cerrar');
 btn.addEventListener('click', function() {
     contenedor.style.display = 'none';
 })
+
+function mostrarParrafoPreguntas(element) {
+    var parrafoPreguntas = element.querySelector(".texto-preguntas");
+    if (parrafoPreguntas.style.display === "none" || !parrafoPreguntas.style.display) {
+        parrafoPreguntas.style.display = "block";
+    } else {
+        parrafoPreguntas.style.display = "none";
+    }
+}

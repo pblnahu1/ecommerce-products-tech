@@ -43,12 +43,13 @@ hr {
     text-transform: uppercase;
     margin-right: 10px;
     border-radius: 50px;
+    transition: background 0.2s ease;
 }
 
 .btn-1:hover {
     background-color: #000000;
     color: #ffffff;
-    transition: all 0.2s ease-in-out;
+    
 }
 
 .btn-span {
@@ -402,6 +403,35 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.sct-preguntas{
+    background-color:rgb(216, 222, 236);
+    padding: 20px 23%;
+    text-align: center;
+}
+
+.container-preguntas{
+    display: block;
+}
+
+.container-preguntas .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.container-preguntas .item .titulo-preguntas>i{
+    margin-left: 15px;
+}
+
+.container-preguntas .item .texto-preguntas{
+    display: none;    
 }
 
 /* Modo Mobile */

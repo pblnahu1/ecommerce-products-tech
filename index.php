@@ -371,6 +371,36 @@
         </div>
     </section>
 
+    <section class="sct-preguntas">
+        <h2>Preguntas Frecuentes</h2>
+        <div class="container-preguntas"> 
+            <div class="item" id="item" onclick="mostrarParrafoPreguntas(this)">
+                <h3 class="titulo-preguntas">¿lorem Lorem ipsum dolor sit amet consectetur adipisicing eli? <i class="fas fa-chevron-circle-down"></i></h3>
+                <p class="texto-preguntas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius earum eaque odio maxime consequuntur neque ipsum vero facilis odit! Esse ullam illo, voluptates aliquam accusamus quis cumque laudantium quo libero!</p>
+            </div>
+            <div class="item" id="item" onclick="mostrarParrafoPreguntas(this)">
+                <h3 class="titulo-preguntas">¿lorem Lorem ipsum dolor sit amet consectetur adipisicing eli? <i class="fas fa-chevron-circle-down"></i></h3>
+                <p class="texto-preguntas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius earum eaque odio maxime consequuntur neque ipsum vero facilis odit! Esse ullam illo, voluptates aliquam accusamus quis cumque laudantium quo libero!</p>
+            </div>
+            <div class="item" id="item" onclick="mostrarParrafoPreguntas(this)">
+                <h3 class="titulo-preguntas">¿lorem Lorem ipsum dolor sit amet consectetur adipisicing eli? <i class="fas fa-chevron-circle-down"></i></h3>
+                <p class="texto-preguntas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius earum eaque odio maxime consequuntur neque ipsum vero facilis odit! Esse ullam illo, voluptates aliquam accusamus quis cumque laudantium quo libero!</p>
+            </div>
+            <div class="item" id="item" onclick="mostrarParrafoPreguntas(this)">
+                <h3 class="titulo-preguntas">¿lorem Lorem ipsum dolor sit amet consectetur adipisicing eli? <i class="fas fa-chevron-circle-down"></i></h3>
+                <p class="texto-preguntas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius earum eaque odio maxime consequuntur neque ipsum vero facilis odit! Esse ullam illo, voluptates aliquam accusamus quis cumque laudantium quo libero!</p>
+            </div>
+            <div class="item" id="item" onclick="mostrarParrafoPreguntas(this)">
+                <h3 class="titulo-preguntas">¿lorem Lorem ipsum dolor sit amet consectetur adipisicing eli? <i class="fas fa-chevron-circle-down"></i></h3>
+                <p class="texto-preguntas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius earum eaque odio maxime consequuntur neque ipsum vero facilis odit! Esse ullam illo, voluptates aliquam accusamus quis cumque laudantium quo libero!</p>
+            </div>
+            <div class="item" id="item" onclick="mostrarParrafoPreguntas(this)">
+                <h3 class="titulo-preguntas">¿lorem Lorem ipsum dolor sit amet consectetur adipisicing eli? <i class="fas fa-chevron-circle-down"></i></h3>
+                <p class="texto-preguntas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius earum eaque odio maxime consequuntur neque ipsum vero facilis odit! Esse ullam illo, voluptates aliquam accusamus quis cumque laudantium quo libero!</p>
+            </div>
+        </div>
+    </section>
+
     <section class="maps">
         <div class="txt-ubi">
             <h2>Ubicación</h2>
@@ -404,6 +434,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="assets/js/swiper.js"></script>
     <script src="assets/js/carrito.js"></script>
+    <script src="assets/js/mostrar-ventana.js"></script>
 </body>
 
 </html>
