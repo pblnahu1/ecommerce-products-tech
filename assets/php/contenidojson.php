@@ -14,7 +14,7 @@ foreach($productos as $producto){
     $sql = "INSERT INTO productos(nombre_producto, imagen_producto, precio_producto) VALUES('$nombre', '$imagen', '$precio')";
 
     if($conexion->query($sql) === TRUE){
-        echo "Producto insertado correctamente: $nombre<br>";
+        echo "Producto insertado correctamente: PRODUCTO: <em>$nombre</em>, URL: <em>$imagen</em>, PRECIO: <em>$precio</em><br>";
     }else{
         echo "Error al insertar producto: " . $conexion->error;
     }

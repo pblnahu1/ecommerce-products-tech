@@ -11,8 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
 
     <!-- iconos Fontawesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <!-- Links CSS -->
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -45,7 +44,7 @@
     <section class="sct-header-slider">
         <div class="header-content container">
             <div class="swiper mySwiper-1">
-                
+
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="slider">
@@ -363,7 +362,7 @@
                 <li class="lista-desc">TDP-down configurable: <span class="span-respuesta">35 W</span></li>
             </ul>
             <a href="https://espacioelectronica.asustienda.com/productos/notebook-asus-zenbook-duo-pro-i7-32gb-1tb-win-11-ux8402/" target="_blank" class="btn-2">Más
-            información</a>
+                información</a>
         </div>
 
         <div class="info-img info-img-2">
@@ -371,32 +370,63 @@
         </div>
     </section>
 
-    <section class="sct-preguntas">
-        <h2>Preguntas Frecuentes</h2>
-        <div class="container-preguntas"> 
-            <div class="item" id="item" onclick="mostrarParrafoPreguntas(this)">
-                <h3 class="titulo-preguntas">¿lorem Lorem ipsum dolor sit amet consectetur adipisicing eli? <i class="fas fa-chevron-circle-down"></i></h3>
-                <p class="texto-preguntas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius earum eaque odio maxime consequuntur neque ipsum vero facilis odit! Esse ullam illo, voluptates aliquam accusamus quis cumque laudantium quo libero!</p>
+    <section class="sct-preguntas-frecuentes">
+        <div class="container-preguntas">
+            <h1 class="heading">Preguntas Frecuentes</h1>
+            <div class="accordion-wrapper">
+                <div class="accordion">
+                    <div class="accordion-heading">
+                        <h3>¿Cómo puedo contactar al servicio de atención al cliente?</h3>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                    <p class="accordion-content">
+                        Puedes contactarnos a través de nuestro formulario de contacto en la sección 'Contacto' de nuestro sitio web o enviando un correo electrónico a [correo electrónico de atención al cliente]. También estamos disponibles en redes sociales como Facebook y Twitter para responder a tus consultas.
+                    </p>
+                </div>
             </div>
-            <div class="item" id="item" onclick="mostrarParrafoPreguntas(this)">
-                <h3 class="titulo-preguntas">¿lorem Lorem ipsum dolor sit amet consectetur adipisicing eli? <i class="fas fa-chevron-circle-down"></i></h3>
-                <p class="texto-preguntas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius earum eaque odio maxime consequuntur neque ipsum vero facilis odit! Esse ullam illo, voluptates aliquam accusamus quis cumque laudantium quo libero!</p>
+            <div class="accordion-wrapper">
+                <div class="accordion">
+                    <div class="accordion-heading">
+                        <h3>¿Cuáles son los métodos de pago aceptados?</h3>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                    <p class="accordion-content">
+                        Aceptamos pagos con targeta de crédito/débito (Visa, MasterCard, etc), PayPal y transferencias bancarias. Además podés pagar desde PagoFácil. Al finalizar la compra, encontrarás todas las opciones disponibles.
+                    </p>
+                </div>
             </div>
-            <div class="item" id="item" onclick="mostrarParrafoPreguntas(this)">
-                <h3 class="titulo-preguntas">¿lorem Lorem ipsum dolor sit amet consectetur adipisicing eli? <i class="fas fa-chevron-circle-down"></i></h3>
-                <p class="texto-preguntas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius earum eaque odio maxime consequuntur neque ipsum vero facilis odit! Esse ullam illo, voluptates aliquam accusamus quis cumque laudantium quo libero!</p>
+            <div class="accordion-wrapper">
+                <div class="accordion">
+                    <div class="accordion-heading">
+                        <h3>¿Cuánto tiempo tarda en llegar mi pedido?</h3>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                    <p class="accordion-content">
+                        El tiempo de entrega varía según la ubicación y el tipo de envío seleccionado. Normalmente, los pedidos estándar se entregan en un plazo de [X días/semanas]. Puedes consultar el estado de tu pedido ingresando a tu cuenta o contactando a nuestro equipo de atención al cliente.
+                    </p>
+                </div>
             </div>
-            <div class="item" id="item" onclick="mostrarParrafoPreguntas(this)">
-                <h3 class="titulo-preguntas">¿lorem Lorem ipsum dolor sit amet consectetur adipisicing eli? <i class="fas fa-chevron-circle-down"></i></h3>
-                <p class="texto-preguntas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius earum eaque odio maxime consequuntur neque ipsum vero facilis odit! Esse ullam illo, voluptates aliquam accusamus quis cumque laudantium quo libero!</p>
+            <div class="accordion-wrapper">
+                <div class="accordion">
+                    <div class="accordion-heading">
+                        <h3>¿Puedo realizar devoluciones o cambios?</h3>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                    <p class="accordion-content">
+                        Sí. Aceptamos devoluciones y cambios dentro de un lapso de días desde la recepción del pedido, siempre y cuando el producto esté en su estado original. Para iniciar un proceso de devolucón o cambio, por favor, ponte en contacto con nuestro equipo de atención al cliente para recibir más instrucciones.
+                    </p>
+                </div>
             </div>
-            <div class="item" id="item" onclick="mostrarParrafoPreguntas(this)">
-                <h3 class="titulo-preguntas">¿lorem Lorem ipsum dolor sit amet consectetur adipisicing eli? <i class="fas fa-chevron-circle-down"></i></h3>
-                <p class="texto-preguntas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius earum eaque odio maxime consequuntur neque ipsum vero facilis odit! Esse ullam illo, voluptates aliquam accusamus quis cumque laudantium quo libero!</p>
-            </div>
-            <div class="item" id="item" onclick="mostrarParrafoPreguntas(this)">
-                <h3 class="titulo-preguntas">¿lorem Lorem ipsum dolor sit amet consectetur adipisicing eli? <i class="fas fa-chevron-circle-down"></i></h3>
-                <p class="texto-preguntas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius earum eaque odio maxime consequuntur neque ipsum vero facilis odit! Esse ullam illo, voluptates aliquam accusamus quis cumque laudantium quo libero!</p>
+            <div class="accordion-wrapper">
+                <div class="accordion">
+                    <div class="accordion-heading">
+                        <h3>¿Cómo puedo reestablecer mi contraseña o acceder a mi cuenta?</h3>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                    <p class="accordion-content">
+                        Si has olvidado tu contraseña, ve a la página de inicio de sesión y haz clic en '¿Olvidaste tu contraseña?'. Te enviaremos un enlace para restablecerla a la dirección de correo electrónico asociada a tu cuenta. Si necesitas más ayuda, contáctanos y estaremos encantados de ayudarte a acceder a tu cuenta.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -405,14 +435,19 @@
         <div class="txt-ubi">
             <h2>Ubicación</h2>
         </div>
-        <iframe title="Mapa" class="map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26253.896922674234!2d-58.388026511442156!3d-34.66134141832057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3335230bd052b%3A0x9d632a18eea90a31!2sAvellaneda%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1698596364060!5m2!1ses!2sar"
-            width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
+        <iframe title="Mapa" class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26253.896922674234!2d-58.388026511442156!3d-34.66134141832057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3335230bd052b%3A0x9d632a18eea90a31!2sAvellaneda%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1698596364060!5m2!1ses!2sar" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
         </iframe>
     </section>
 
     <h1 class="txt-noticias">Contactate con nosotros</h1>
+    <div class="container-wpp">
+        <div class="btn-socials btn-wpp">
+            <a href="https://wa.me/123456789"><img src="assets/img/logos/whatsapp.png" alt="icon-whatsapp"> WhatsApp</a>
+        </div>
+        <div class="btn-socials btn-twitter">
+            <a href="https://twitter.com/"><img src="assets/img/logos/twitter.png" alt="icon-twitter"> X (Twitter)</a>
+        </div>
+    </div>
 
     <footer>
         <div class="footer-container">
@@ -431,10 +466,11 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/js/swiper.js"></script>
-    <script src="assets/js/carrito.js"></script>
-    <script src="assets/js/mostrar-ventana.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js" defer></script>
+    <script src="assets/js/swiper.js" defer></script>
+    <script src="assets/js/carrito.js" defer></script>
+    <script src="assets/js/mostrar-ventana.js" defer></script>
+    <script src="assets/js/questions.js" defer></script>
 </body>
 
 </html>

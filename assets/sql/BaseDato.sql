@@ -21,7 +21,7 @@ CREATE TABLE carrito(
 );
 
 CREATE TABLE productos(
-	productosid_productos INT NOT NULL AUTO_INCREMENT,
+	id_productos INT NOT NULL AUTO_INCREMENT,
 	nombre_producto VARCHAR(255) NOT NULL,
 	imagen_producto VARCHAR(255) NOT NULL,
 	precio_producto INT NOT NULL,
@@ -61,3 +61,5 @@ Carritos y Productos. Aquí, cada registro representa la asociación de un produ
 un carrito específico.
 */
 
+SELECT * FROM productos;
+TRUNCATE TABLE PRODUCTOS;
