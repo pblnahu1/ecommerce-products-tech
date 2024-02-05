@@ -62,4 +62,6 @@ un carrito específico.
 */
 
 SELECT * FROM productos;
-TRUNCATE TABLE PRODUCTOS;
+SELECT * FROM usuarios;
+TRUNCATE TABLE usuarios;
+TRUNCATE TABLE productos;
