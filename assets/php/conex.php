@@ -1,7 +1,7 @@
 <?php
 
 try {
-  $conexion = new mysqli("localhost", "root", "", "ecommerce");
+  $conexion = new mysqli("localhost", "root", "", "ecommerce-notebooks");
   if ($conexion->connect_error) {
     throw new Exception("Error de conexión a la Base de Datos " . $conexion->connect_error);
   }

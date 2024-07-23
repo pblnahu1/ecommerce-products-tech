@@ -1,4 +1,4 @@
-CREATE DATABASE ecommerce;
+CREATE DATABASE ecommerce-notebooks;
 
 CREATE TABLE usuarios(
 	id_usuario INT NOT NULL AUTO_INCREMENT,
